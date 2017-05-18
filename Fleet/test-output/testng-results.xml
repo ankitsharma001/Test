@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Fleet Management" duration-ms="23843" started-at="2017-05-17T08:31:36Z" finished-at="2017-05-17T08:32:00Z">
+    <groups>
+    </groups>
+    <test name="Fleet Management Regression suite 1" duration-ms="23843" started-at="2017-05-17T08:31:36Z" finished-at="2017-05-17T08:32:00Z">
+      <class name="Main.mainClass">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Main.mainClass@91161c7]" name="beforeMethod" is-config="true" duration-ms="13002" started-at="2017-05-17T14:01:36Z" finished-at="2017-05-17T14:01:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="public_Static_Main()[pri:0, instance:Main.mainClass@91161c7]" name="public_Static_Main" duration-ms="10057" started-at="2017-05-17T14:01:49Z" finished-at="2017-05-17T14:01:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- public_Static_Main -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Main.mainClass@91161c7]" name="afterMethod" is-config="true" duration-ms="766" started-at="2017-05-17T14:01:59Z" finished-at="2017-05-17T14:02:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Main.mainClass -->
+    </test> <!-- Fleet Management Regression suite 1 -->
+  </suite> <!-- Fleet Management -->
+</testng-results>
