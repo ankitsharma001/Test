@@ -1,8 +1,9 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Fleet Management">
-	<test name="Fleet Management Regression suite 1" >
-		<classes>
-			<class name="Main.mainClass"/>
-  		</classes>
-	</test>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Fleet Management Framework Suite">
+  <test name="Fleet Management Login">
+    <classes>
+      <class name="testCases.loginPageTestCaseScript"/>
+    </classes>
+  </test>
 </suite>

@@ -11,20 +11,23 @@ public class Log {
 	 // This is to print log for the beginning of the test case, as we usually run so many test cases as a test suite
 
 	 public static void startTestCase(String sTestCaseName){
+		Log.info("________________________________________________________________________________________");
 		Log.info("****************************************************************************************");
-		Log.info("Test case Name : - "+sTestCaseName+ "       ");
+		Log.info("Test case Name -->  "+sTestCaseName+ "       ");
 		Log.info("****************************************************************************************");
 		Log.info("                                                                                        ");
+		
 		}
 
 		//This is to print log for the ending of the test case
 
 	 public static void endTestCase(String sTestCaseName){
+		Log.info("                                                                                        ");
 		Log.info("****************************************************************************************");
-		Log.info("Test Case PASS             "+"-E---N---D-"+"           ");
+		Log.info("End Test Case --->             "+sTestCaseName+"           ");
 		Log.info("****************************************************************************************");
 		Log.info("                                                                                        ");
-
+		Log.info("________________________________________________________________________________________");
 		}
 
 		// Need to create these methods, so that they can be called  

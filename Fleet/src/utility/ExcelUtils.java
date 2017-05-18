@@ -1,15 +1,17 @@
 package utility;
 
+import java.io.File;
 import java.io.FileInputStream;
-
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Iterator;
 
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFCell;
-
 import org.apache.poi.xssf.usermodel.XSSFRow;
-
 import org.apache.poi.xssf.usermodel.XSSFSheet;
-
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 
@@ -21,98 +23,44 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 		private static XSSFCell Cell;
 
-		private static XSSFRow Row;
-
-		// This method is to set the File path and to open the Excel file, Pass
-		// Excel Path and Sheetname as Arguments to this method
-
-		public static void setExcelFile(String Path, String SheetName)
-				throws Exception {
-
-			try {
-
-				// Open the Excel file
-
-				FileInputStream ExcelFile = new FileInputStream(Path);
-
-				// Access the required test data sheet
-
-				ExcelWBook = new XSSFWorkbook(ExcelFile);
-
-				ExcelWSheet = ExcelWBook.getSheet(SheetName);
-
-			} catch (Exception e) {
-
-				throw (e);
-
-			}
-
+		private static XSSFRow Row1;
+		
+/*		public static void main(String args[]) throws IOException {
+			// TODO Auto-generated method stub
+			String Str1 = ExcelUtils.getData(14, 1, 13);
+			System.out.println(Str1);
+			String Str = ExcelUtils.getData(14, 2, 13);
+			System.out.println(Str);
 		}
-
-		// This method is to read the test data from the Excel cell, in this we
-		// are passing parameters as Row num and Col num
-
-		public static String getCellData(int RowNum, int ColNum)
-				throws Exception {
-
-			ExcelUtils.setExcelFile(Constant.Path_TestData,"TestData.xls");
-			try {
-
-				Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
-
-				String CellData = Cell.getStringCellValue();
-
-				return CellData;
-
-			} catch (Exception e) {
-
-				return "";
-
+		
+		*/
+		public static String getData(int row, int col, int flag){
+			String value = null;
+			try{
+			 FileInputStream file = new FileInputStream (new File("C:\\Users\\admin\\git\\Fleet Management\\Fleet\\TestData.xlsx"));
+			 Workbook mybook = new XSSFWorkbook(file);
+			 String sheetname = "Sheet1";
+			 Sheet mysheet = mybook.getSheet(sheetname);
+			 Iterator<Row> iterator = mysheet.iterator();
+			 iterator.next();
+			 int var = 0;
+			 while (iterator.hasNext()) {
+		          
+				 Row nextRow = iterator.next();
+		           if(var == flag){
+		        	   value = nextRow.getCell(col).toString();
+		        	  break;
+		           }
+		           var++;
+		           /*String str1 = nextRow.getCell(col).toString();
+		           System.out.println(str1);*/
+		           
+			 }
+			
+			}catch(Exception E){
+				System.out.println("File not Found");
+				Log.error("File not Found");
 			}
-
+			 return value;
 		}
-
-		// This method is to write in the Excel cell, Row num and Col num are
-		// the parameters
-
-		public static void setCellData(String Result, int RowNum, int ColNum)
-				throws Exception {
-
-			try {
-
-				Row = ExcelWSheet.getRow(RowNum);
-
-				Cell = Row.getCell(ColNum, Row.RETURN_BLANK_AS_NULL);
-
-				if (Cell == null) {
-
-					Cell = Row.createCell(ColNum);
-
-					Cell.setCellValue(Result);
-
-				} else {
-
-					Cell.setCellValue(Result);
-
-				}
-
-				// Constant variables Test Data path and Test Data file name
-
-				FileOutputStream fileOut = new FileOutputStream(
-						Constant.Path_TestData + Constant.Path_TestData);
-
-				ExcelWBook.write(fileOut);
-
-				fileOut.flush();
-
-				fileOut.close();
-
-			} catch (Exception e) {
-
-				throw (e);
-
-			}
-
-		}
-
 	}

@@ -3,30 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcase.loginPageCases">
+      <class name="testcase.loginPageTestCaseScript">
         <methods>
-          <include name="clearUserNameAndPassword"/>
-          <include name="clickForgotLink"/>
-          <include name="provideCorrectUserNamebutNotMobileNumber"/>
-          <include name="emptyUserNameAndValidPass"/>
-          <include name="provideUserDigitbutNotMobileNumber"/>
-          <include name="provideNumericInUserNamebutNotMobileNumber"/>
-          <include name="wrongUserNameAndWrongPass"/>
-          <include name="provideWrongUserNameAndWrongMobileNumber"/>
-          <include name="validUserNameAndInvalidPass"/>
-          <include name="provideCorrectUserNameAndWrongMobileNumnber"/>
-          <include name="CloseForgot"/>
-          <include name="ivalidUserNameAndValidPass"/>
-          <include name="provideEmptyUserNameAndCorrectMobileNumber"/>
-          <include name="provideCorrectUserNameAndCorrectMobileNumner"/>
-          <include name="provideEmptyUserNameAndEmptyMobileNumber"/>
-          <include name="emptyUserNameAndEmptyPass"/>
-          <include name="provideEmailInUserNamebutNotMobileNumber"/>
-          <include name="validUserNameAndEmptyPass"/>
-          <include name="validUserNameAndValidPass"/>
-          <include name="beforeClass"/>
+          <include name="logout"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- testcase.loginPageCases -->
+      </class> <!-- testcase.loginPageTestCaseScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,30 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Fleet Management]">
   <test name="Fleet Management Regression suite 1(failed)">
     <classes>
-      <class name="testcase.loginPageCases">
+      <class name="Main.mainClass">
         <methods>
-          <include name="clearUserNameAndPassword"/>
-          <include name="clickForgotLink"/>
-          <include name="provideCorrectUserNamebutNotMobileNumber"/>
-          <include name="emptyUserNameAndValidPass"/>
-          <include name="provideUserDigitbutNotMobileNumber"/>
-          <include name="provideNumericInUserNamebutNotMobileNumber"/>
-          <include name="wrongUserNameAndWrongPass"/>
-          <include name="provideWrongUserNameAndWrongMobileNumber"/>
-          <include name="validUserNameAndInvalidPass"/>
-          <include name="provideCorrectUserNameAndWrongMobileNumnber"/>
-          <include name="CloseForgot"/>
-          <include name="ivalidUserNameAndValidPass"/>
-          <include name="provideEmptyUserNameAndCorrectMobileNumber"/>
           <include name="beforeMethod"/>
-          <include name="provideCorrectUserNameAndCorrectMobileNumner"/>
-          <include name="provideEmptyUserNameAndEmptyMobileNumber"/>
-          <include name="emptyUserNameAndEmptyPass"/>
-          <include name="provideEmailInUserNamebutNotMobileNumber"/>
-          <include name="validUserNameAndEmptyPass"/>
-          <include name="validUserNameAndValidPass"/>
+          <include name="afterMethod"/>
+          <include name="public_Static_Main"/>
         </methods>
-      </class> <!-- testcase.loginPageCases -->
+      </class> <!-- Main.mainClass -->
     </classes>
   </test> <!-- Fleet Management Regression suite 1(failed) -->
 </suite> <!-- Failed suite [Fleet Management] -->

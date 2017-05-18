@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import testcase.loginPageCases;
+import utility.ExcelUtils;
 import utility.Log;
 
 public class mainClass {
@@ -22,13 +23,16 @@ public class mainClass {
   public void public_Static_Main() throws FileNotFoundException {
 	 loginPageCases loginTestCase = new loginPageCases();
 	  
+	 
+	  loginTestCase.validUserNameAndValidPass(driver);
+	  loginTestCase.logout(driver);
 	  loginTestCase.validUserNameAndInvalidPass(driver);
 	  loginTestCase.ivalidUserNameAndValidPass(driver);
 	  loginTestCase.validUserNameAndEmptyPass(driver);
 	  loginTestCase.emptyUserNameAndValidPass(driver);
 	  loginTestCase.wrongUserNameAndWrongPass(driver);
 	  loginTestCase.emptyUserNameAndEmptyPass(driver);
-	  //loginTestCase.validUserNameAndValidPass(driver);
+	  loginTestCase.validUserNameAndValidPass(driver);
 	  loginTestCase.clickForgotLink(driver);
 	  loginTestCase.provideUserDigitbutNotMobileNumber(driver);
 	  loginTestCase.provideEmailInUserNamebutNotMobileNumber(driver);
