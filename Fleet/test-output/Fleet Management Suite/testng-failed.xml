@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Fleet Management Suite]">
+  <test name="Fleet Management(failed)">
+    <classes>
+      <class name="org.shiksha.fleet.feature.homePageTestCases">
+        <methods>
+          <include name="verifyBusReport"/>
+          <include name="clickDashboard"/>
+          <include name="beforeClass"/>
+          <include name="verifySizeHomeDropDownMenu"/>
+          <include name="beforeSuite"/>
+          <include name="verifyFemaleTotalEmpReport"/>
+          <include name="verifyScheduleSummeryReport"/>
+          <include name="afterMethod"/>
+          <include name="verifyTotalEmpReport"/>
+          <include name="verifyShiftSummeryReport"/>
+        </methods>
+      </class> <!-- org.shiksha.fleet.feature.homePageTestCases -->
+    </classes>
+  </test> <!-- Fleet Management(failed) -->
+</suite> <!-- Failed suite [Fleet Management Suite] -->

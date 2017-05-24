@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Fleet Management Framework Suite">
-  <test name="Fleet Management Login">
+<suite name="Fleet Management Suite">
+  <test name="Fleet Management">
     <classes>
-      <class name="testCases.loginPageTestCaseScript"/>
+      <class name="org.shiksha.fleet.feature.loginPageTestCaseScript"/>
+      <class name="org.shiksha.fleet.feature.homePageTestCases"/>
+      <class name="org.shiksha.fleet.feature.traceFleetTestCases"/>
     </classes>
-  </test>
-</suite>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

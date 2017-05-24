@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 19 08:14:59 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>23 seconds (23693 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.CloseForgot()'><b>CloseForgot</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: close Forgot Window</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.clearUserNameAndPassword()'><b>clearUserNameAndPassword</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Clear Username And Password</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.clickForgotLink()'><b>clickForgotLink</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Click on Forgot Link</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.emptyUserNameAndEmptyPass()'><b>emptyUserNameAndEmptyPass</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Empty UserName and Empty Password</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.emptyUserNameAndValidPass()'><b>emptyUserNameAndValidPass</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Empty UserName and valid Password</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.invalidUserNameAndValidPass()'><b>invalidUserNameAndValidPass</b><br>Test class: testcase.loginPageTestCaseScript</td>
+<td></td>
+<td>1</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.provideCorrectUserNameAndWrongMobileNumnber()'><b>provideCorrectUserNameAndWrongMobileNumnber</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Provide Correct UserName with Wrong Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.provideCorrectUserNamebutNotMobileNumber()'><b>provideCorrectUserNamebutNotMobileNumber</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Provide Correct UserName but not Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.provideEmailInUserNamebutNotMobileNumber()'><b>provideEmailInUserNamebutNotMobileNumber</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Provide Email As UserName but not Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.provideEmptyUserNameAndCorrectMobileNumber()'><b>provideEmptyUserNameAndCorrectMobileNumber</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Provide Empty UserName with Correct Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.provideEmptyUserNameAndEmptyMobileNumber()'><b>provideEmptyUserNameAndEmptyMobileNumber</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Provide Empty UserName with Empty Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.provideNumericInUserNamebutNotMobileNumber()'><b>provideNumericInUserNamebutNotMobileNumber</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Provide Numeric As UserName but not Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.provideUserDigitbutNotMobileNumber()'><b>provideUserDigitbutNotMobileNumber</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Provide digit Value as UserName but not Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.provideWrongUserNameAndWrongMobileNumber()'><b>provideWrongUserNameAndWrongMobileNumber</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Provide Wrong UserName with Wrong Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.validUserNameAndEmptyPass()'><b>validUserNameAndEmptyPass</b><br>Test class: testcase.loginPageTestCaseScript</td>
+<td></td>
+<td>0</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.validUserNameAndInvalidPass()'><b>validUserNameAndInvalidPass</b><br>Test class: testcase.loginPageTestCaseScript</td>
+<td></td>
+<td>2</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.validUserNameAndValidPass()'><b>validUserNameAndValidPass</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Valid UserName and Valid Password</td>
+<td></td>
+<td>10</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+<tr>
+<td title='testcase.loginPageTestCaseScript.wrongUserNameAndWrongPass()'><b>wrongUserNameAndWrongPass</b><br>Test class: testcase.loginPageTestCaseScript<br>Test method: Wrong UserName and Wrong Password</td>
+<td></td>
+<td>1</td>
+<td>testcase.loginPageTestCaseScript@6a4f787b</td></tr>
+</table><p>
+</body>
+</html>

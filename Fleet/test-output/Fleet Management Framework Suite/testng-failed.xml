@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Fleet Management Framework Suite]">
+  <test name="Fleet Management Login(failed)">
+    <classes>
+      <class name="Main.mainClass">
+        <methods>
+          <include name="emptyUserNameAndEmptyPass"/>
+          <include name="beforeMethod"/>
+          <include name="validUserNameAndEmptyPass"/>
+          <include name="logout"/>
+          <include name="wrongUserNameAndWrongPass"/>
+          <include name="invalidUserNameAndValidPass"/>
+          <include name="validUserNameAndInvalidPass"/>
+          <include name="validUserNameAndValidPass"/>
+          <include name="CloseForgot"/>
+          <include name="clearUserNameAndPassword"/>
+          <include name="emptyUserNameAndValidPass"/>
+        </methods>
+      </class> <!-- Main.mainClass -->
+    </classes>
+  </test> <!-- Fleet Management Login(failed) -->
+</suite> <!-- Failed suite [Fleet Management Framework Suite] -->

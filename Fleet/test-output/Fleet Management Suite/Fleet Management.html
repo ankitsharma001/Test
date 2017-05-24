@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>TestNG:  Fleet Management</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Fleet Management</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 24 13:08:24 IST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>29 seconds (29228 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.CloseForgot()'><b>CloseForgot</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: close Forgot Window</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.traceFleetTestCases.checkFiledDetails()'><b>checkFiledDetails</b><br>Test class: org.shiksha.fleet.feature.traceFleetTestCases<br>Test method: Verify Trace Field Table Details</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.traceFleetTestCases@17695df3</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.traceFleetTestCases.checkTraceFleetPage()'><b>checkTraceFleetPage</b><br>Test class: org.shiksha.fleet.feature.traceFleetTestCases<br>Test method: Verify Trace Fleet Page is opened or not</td>
+<td></td>
+<td>4</td>
+<td>org.shiksha.fleet.feature.traceFleetTestCases@17695df3</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.clearUserNameAndPassword()'><b>clearUserNameAndPassword</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Clear Username And Password</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.homePageTestCases.clickDashboard()'><b>clickDashboard</b><br>Test class: org.shiksha.fleet.feature.homePageTestCases<br>Test method: Click on DashBoard</td>
+<td></td>
+<td>1</td>
+<td>org.shiksha.fleet.feature.homePageTestCases@71d15f18</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.clickForgotLink()'><b>clickForgotLink</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Click on Forgot Link</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.emptyUserNameAndEmptyPass()'><b>emptyUserNameAndEmptyPass</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Empty UserName and Empty Password</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.emptyUserNameAndValidPass()'><b>emptyUserNameAndValidPass</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Empty UserName and valid Password</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.invalidUserNameAndValidPass()'><b>invalidUserNameAndValidPass</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript</td>
+<td></td>
+<td>1</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.provideCorrectUserNameAndWrongMobileNumnber()'><b>provideCorrectUserNameAndWrongMobileNumnber</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Provide Correct UserName with Wrong Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.provideCorrectUserNamebutNotMobileNumber()'><b>provideCorrectUserNamebutNotMobileNumber</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Provide Correct UserName but not Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.provideEmailInUserNamebutNotMobileNumber()'><b>provideEmailInUserNamebutNotMobileNumber</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Provide Email As UserName but not Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.provideEmptyUserNameAndCorrectMobileNumber()'><b>provideEmptyUserNameAndCorrectMobileNumber</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Provide Empty UserName with Correct Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.provideEmptyUserNameAndEmptyMobileNumber()'><b>provideEmptyUserNameAndEmptyMobileNumber</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Provide Empty UserName with Empty Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.provideNumericInUserNamebutNotMobileNumber()'><b>provideNumericInUserNamebutNotMobileNumber</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Provide Numeric As UserName but not Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.provideUserDigitbutNotMobileNumber()'><b>provideUserDigitbutNotMobileNumber</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Provide digit Value as UserName but not Mobile Number then click Submit Button</td>
+<td></td>
+<td>1</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.provideWrongUserNameAndWrongMobileNumber()'><b>provideWrongUserNameAndWrongMobileNumber</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Provide Wrong UserName with Wrong Mobile Number then click Submit Button</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.validUserNameAndEmptyPass()'><b>validUserNameAndEmptyPass</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.validUserNameAndInvalidPass()'><b>validUserNameAndInvalidPass</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript</td>
+<td></td>
+<td>1</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.validUserNameAndValidPass()'><b>validUserNameAndValidPass</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Valid UserName and Valid Password</td>
+<td></td>
+<td>5</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.homePageTestCases.verifyBusReport()'><b>verifyBusReport</b><br>Test class: org.shiksha.fleet.feature.homePageTestCases<br>Test method: Verify Bus Repport on DashBoard Page</td>
+<td></td>
+<td>1</td>
+<td>org.shiksha.fleet.feature.homePageTestCases@71d15f18</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.homePageTestCases.verifyFemaleTotalEmpReport()'><b>verifyFemaleTotalEmpReport</b><br>Test class: org.shiksha.fleet.feature.homePageTestCases<br>Test method: Verify Female Employee Repport on DashBoard Page</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.homePageTestCases@71d15f18</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.homePageTestCases.verifyScheduleSummeryReport()'><b>verifyScheduleSummeryReport</b><br>Test class: org.shiksha.fleet.feature.homePageTestCases<br>Test method: Verify Schedule Summary Report on DashBoard Page</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.homePageTestCases@71d15f18</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.homePageTestCases.verifyShiftSummeryReport()'><b>verifyShiftSummeryReport</b><br>Test class: org.shiksha.fleet.feature.homePageTestCases<br>Test method: Verify Shift Summary Report on DashBoard Page</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.homePageTestCases@71d15f18</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.homePageTestCases.verifySizeHomeDropDownMenu()'><b>verifySizeHomeDropDownMenu</b><br>Test class: org.shiksha.fleet.feature.homePageTestCases<br>Test method: Fetch and display the contents from Home Drop Down List</td>
+<td></td>
+<td>1</td>
+<td>org.shiksha.fleet.feature.homePageTestCases@71d15f18</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.homePageTestCases.verifyTotalEmpReport()'><b>verifyTotalEmpReport</b><br>Test class: org.shiksha.fleet.feature.homePageTestCases<br>Test method: Verify Total Employee Repport on DashBoard Page</td>
+<td></td>
+<td>0</td>
+<td>org.shiksha.fleet.feature.homePageTestCases@71d15f18</td></tr>
+<tr>
+<td title='org.shiksha.fleet.feature.loginPageTestCaseScript.wrongUserNameAndWrongPass()'><b>wrongUserNameAndWrongPass</b><br>Test class: org.shiksha.fleet.feature.loginPageTestCaseScript<br>Test method: Wrong UserName and Wrong Password</td>
+<td></td>
+<td>1</td>
+<td>org.shiksha.fleet.feature.loginPageTestCaseScript@dbd940d</td></tr>
+</table><p>
+</body>
+</html>
