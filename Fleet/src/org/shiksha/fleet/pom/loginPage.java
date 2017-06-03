@@ -37,6 +37,10 @@ public class loginPage extends Log {
 	private static final By closeforgot=By.xpath(".//*[@class='close']");
 	private static final By btnlogout=By.xpath(".//*[contains(text(),'Logout')]");
 	private static final By demo=By.xpath(".//*[contains(text(),'demo')]");
+	public static final By btnOK=By.xpath(".//button[contains(text(),'OK')]");
+	public static final By AlertText= By.xpath(".//*[@id='swal2-content']");
+	public static final By yesDelete= By.xpath(".//*[contains(text(),'Yes, delete it!')]");
+	
 	static String Parent_Window=null;
 	/*
 	 * Page Factory Method
@@ -56,16 +60,18 @@ public class loginPage extends Log {
 		driver.findElement(password).sendKeys(pass);
 	}
 	
-	public static String clickLogInBtn(WebDriver driver){
+/*	public static String clickLogInBtn(WebDriver driver){
 		Log.info("Click login Button");
-		driver.findElement(loginbtn).click();
-		
-		Alert alert = driver.switchTo().alert();
-		String alertText = alert.getText();
+		String alertText = driver.findElement(AlertText).getText();
+		String Parent_Window = driver.getWindowHandle();
+		for(String Child_Window : driver.getWindowHandles()){
+			driver.switchTo().window(Child_Window);
+			driver.findElement(btnOK).click();
+		}
 		Log.info("Handle Alert Message : "+alertText);
-		alert.accept();
+		driver.switchTo().window(Parent_Window);
 		return alertText;
-	}
+	}*/
 	
 	public static void login(WebDriver driver){
 		Log.info("click login button");
@@ -73,7 +79,10 @@ public class loginPage extends Log {
 	}
 	
 	public static void forgotlink(WebDriver driver){
+		driver.navigate().refresh();
 		Log.info("Click on forgot link");
+		WebDriverWait wait = new WebDriverWait(driver, 100);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(linkforgot));
 		driver.findElement(linkforgot).click();
 		Parent_Window = driver.getWindowHandle();
 	}
@@ -90,8 +99,8 @@ public class loginPage extends Log {
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(forgotMobileNumber));
 		driver.findElement(forgotMobileNumber).clear();
-		Log.info("Entering Mobile Number in forgot link Window : "+Mobile);
 		driver.findElement(forgotMobileNumber).sendKeys(Mobile);
+		Log.info("Entering Mobile Number in forgot link Window : "+Mobile);
 	}
 	
 	public static void forgotPageClear(WebDriver driver){
@@ -99,16 +108,56 @@ public class loginPage extends Log {
 		driver.findElement(forgotClear).clear();
 	}
 	
-	public static String forgotSubmit(WebDriver driver){
+	public static void forgotSubmit(WebDriver driver){
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(forgotSubmit));
-		Log.info("Click on forgot submit button");
 		driver.findElement(forgotSubmit).click();
-		wait.until(ExpectedConditions.alertIsPresent());
-		Alert alert = driver.switchTo().alert();
-		String alertText = alert.getText();
-		Log.info("Handle Alert Window and getting message"+alertText);
-		alert.accept();
+		Log.info("Click on forgot submit button");
+	}
+	
+	public static String AlertWindow(WebDriver driver){
+		String alertText = null;
+		String Parent_Window = driver.getWindowHandle();
+		for(String Child_Window : driver.getWindowHandles()){
+			driver.switchTo().window(Child_Window);
+			WebDriverWait wait = new WebDriverWait(driver, 45);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(AlertText));
+			alertText = driver.findElement(AlertText).getText();
+			System.out.println("Message :-" + alertText);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(btnOK));
+			boolean status = driver.findElement(btnOK).isDisplayed();
+			if(status){
+				driver.findElement(btnOK).click();
+				Log.info("button ok clicked");
+			}
+			else{
+				driver.findElement(yesDelete).click();
+				Log.info("Yes, delete it! clicked");
+			}
+		}
+		driver.switchTo().window(Parent_Window);
+		Log.info("Handle Alert Window and getting message : "+alertText);
+		return alertText;
+	}
+	
+	public static String AlertWindowYesDeleteIt(WebDriver driver){
+		String alertText = null;
+		String Parent_Window = driver.getWindowHandle();
+		for(String Child_Window : driver.getWindowHandles()){
+			driver.switchTo().window(Child_Window);
+			WebDriverWait wait = new WebDriverWait(driver, 45);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(AlertText));
+			alertText = driver.findElement(AlertText).getText();
+			System.out.println("Message :-" + alertText);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(yesDelete));
+			boolean status = driver.findElement(yesDelete).isDisplayed();
+			if(status){
+				driver.findElement(yesDelete).click();
+				Log.info("Yes, delete it! clicked");
+			}
+		}
+		driver.switchTo().window(Parent_Window);
+		Log.info("Handle Alert Window and getting message : "+alertText);
 		return alertText;
 	}
 	
@@ -141,17 +190,19 @@ public class loginPage extends Log {
 	
 	public static void closeForgot(WebDriver driver){
 		Log.info("Forgot close clicked ");
+		WebDriverWait wait = new WebDriverWait(driver, 45);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(forgotClose));
 		driver.findElement(forgotClose).click();
 		driver.switchTo().window(Parent_Window);
 	}
 	
 	public static void logout(WebDriver driver){
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver, 35);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(demo));
-		WebElement searchBtn = driver.findElement(demo);
+		/*WebElement searchBtn = driver.findElement(demo);
 		Actions action = new Actions(driver);
-		action.moveToElement(searchBtn).perform();
-		driver.findElement(demo).click();;
+		action.moveToElement(searchBtn).perform();*/
+		driver.findElement(demo).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(btnlogout));
 		driver.findElement(btnlogout).click();
 	}

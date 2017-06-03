@@ -6,6 +6,10 @@
       <class name="org.shiksha.fleet.feature.loginPageTestCaseScript"/>
       <class name="org.shiksha.fleet.feature.homePageTestCases"/>
       <class name="org.shiksha.fleet.feature.traceFleetTestCases"/>
+      <class name="org.shiksha.fleet.feature.notificationPageTestCases"/>
+      <class name="org.shiksha.fleet.feature.routesAddRouteTestCases"/>
+      <class name="org.shiksha.fleet.feature.showRouteTestCases"/>
+      <class name="org.shiksha.fleet.feature.createScheduleTestCase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

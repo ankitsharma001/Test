@@ -4,10 +4,13 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
-
+import java.sql.Time;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.Proxy;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -33,19 +36,14 @@ public class testBase {
 
 	@BeforeSuite
 	public static void beforeSuite() throws MalformedURLException {
-		
-		String baseUrl , nodeUrl;
-		baseUrl = "http://fleetmanagement.astiinfotech.com/";
-		nodeUrl = "http://192.168.10.21:5568/wd/hub";
-
-		DesiredCapabilities capability = DesiredCapabilities.chrome();
-		capability.setBrowserName("chrome");
-		capability.setPlatform(Platform.WIN8_1);
-
-		driver = new RemoteWebDriver(new URL(nodeUrl),capability);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
-		Log.info("Driver is opening URL");
+		 String service = Constant.service;
+		 System.setProperty("webdriver.chrome.driver", service); 
+		 driver = new ChromeDriver();
+		 driver.manage().window().maximize();
+		 Log.info("Driver is opening URL"); driver.navigate().to(Constant.URL);
+		 Assert.assertEquals("http://fleetmanagement.astiinfotech.com/",
+		 "http://fleetmanagement.astiinfotech.com/");
+		 
 	}
 
 	@AfterSuite
@@ -53,68 +51,16 @@ public class testBase {
 		driver.quit();
 	}
 
-	// Initialize Log4j logsValid UserName and Invalid Password
-
-	public static void startTestCase(String sTestCaseName) {
-		Log.info("________________________________________________________________________________________");
-		Log.info("****************************************************************************************");
-		Log.info("Test case Name -->  " + sTestCaseName + "       ");
-		Log.info("****************************************************************************************");
-		Log.info("                                                                                        ");
-
+	public static void getscreenshot(String filename) throws Exception {
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        //The below method will save the screen shot in d drive with name "screenshot.png"
+           FileUtils.copyFile(scrFile, new File("C:\\Users\\admin\\git\\Fleet Management\\Fleet\\TestOutput\\"+filename));
 	}
-
-	// This is to print log for the ending of the test case
-
-	public static void endTestCase(String sTestCaseName) {
-		Log.info("                                                                                        ");
-		Log.info("****************************************************************************************");
-		Log.info("End Test Case --->             " + sTestCaseName
-				+ "           ");
-		Log.info("****************************************************************************************");
-		Log.info("                                                                                        ");
-		Log.info("________________________________________________________________________________________");
-	}
-
-	// Need to create these methods, so that they can be called
-
-	public static void info(String message) {
-
-		Log.info(message);
-
-	}
-
-	public static void warn(String message) {
-
-		Log.warn(message);
-
-	}
-
-	public static void error(String message) {
-
-		Log.error(message);
-
-	}
-
-	public static void fatal(String message) {
-
-		Log.fatal(message);
-
-	}
-
-	public static void debug(String message) {
-
-		Log.debug(message);
-
-	}
-
-	/*
-	 * String service = Constant.service;
-	 * 
-	 * System.setProperty("webdriver.chrome.driver", service); driver = new
-	 * ChromeDriver(); driver.manage().window().maximize();
-	 * Log.info("Driver is opening URL"); driver.navigate().to(Constant.URL);
-	 * Assert.assertEquals("http://fleetmanagement.astiinfotech.com/",
-	 * "http://fleetmanagement.astiinfotech.com/");
-	 */
+	
+	
+	
+	
+	
+	
+	
 }

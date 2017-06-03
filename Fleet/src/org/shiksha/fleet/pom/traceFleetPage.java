@@ -19,6 +19,7 @@ public class traceFleetPage {
 	private static final By FleetTrace = By.xpath(".//*[@href='#' and contains(text(),'Home')]/following-sibling::ul[1]/li[2]/a");
 	private static final By home = By
 			.xpath(".//*[@class='dropdown-toggle' and contains(text(),'Home')]");
+	private static final By NoTripStartedYet = By.xpath(".//*[@id='error_div']");
 	
 	public void checkTraceFleetPage(WebDriver driver){
 		WebDriverWait wait = new WebDriverWait(driver, 15);
@@ -31,7 +32,12 @@ public class traceFleetPage {
 	}
 	
 	public void checkTripStartedText(WebDriver driver){
-		driver.findElement(traceFleetText).isDisplayed();
+		boolean status = driver.findElement(traceFleetText).isDisplayed();
+		if(status){
+			Log.info("Trip Started Text is available ..");
+		}
+		else
+			Log.info("Trip Started Text is not available");
 	}
 	
 	public void checkTripstartTableDetails(WebDriver driver){
@@ -40,8 +46,14 @@ public class traceFleetPage {
 			String text = webElement.getText();
 			Log.info(text);
 		}
-		Assert.assertEquals((list.get(0).getText()), "Route Name");
-		Assert.assertEquals((list.get(1).getText()), "Driver Name");
+		String notripstartedText = driver.findElement(NoTripStartedYet).getText();
+		if(notripstartedText.equals("No trips started yet")){
+			Log.info("No Trip Information Available");
+		}
+		else{
+			Assert.assertEquals((list.get(0).getText()), "Route Name");
+			Assert.assertEquals((list.get(1).getText()), "Driver Name");
+		}
 	}
 
 }

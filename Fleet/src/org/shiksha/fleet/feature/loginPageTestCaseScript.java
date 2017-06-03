@@ -29,7 +29,8 @@ public class loginPageTestCaseScript extends testBase{
 			password = ExcelUtils.getData(1, 2, 0);
 			loginPage.enterUserName(driver, username);
 			loginPage.enterPassword(driver, password);
-			String message = loginPage.clickLogInBtn(driver);
+			loginPage.login(driver);
+			String message = loginPage.AlertWindow(driver);
 			try {
 				AssertJUnit.assertEquals("Incorrect Username or Password", message);
 			} catch (AssertionError AE) {
@@ -48,9 +49,10 @@ public class loginPageTestCaseScript extends testBase{
 			password = ExcelUtils.getData(2, 2, 1);
 			loginPage.enterUserName(driver, username);
 			loginPage.enterPassword(driver, password);
-			String message = loginPage.clickLogInBtn(driver);
+			loginPage.login(driver);
+			String message = loginPage.AlertWindow(driver);
 			try {
-				AssertJUnit.assertEquals("Incorrect Username or Password", message);
+				AssertJUnit.assertEquals("Incorrect Username or Password ", message);
 			} catch (AssertionError AE) {
 				Log.warn("Alert message is not correct :-  Expected is \"Incorrect Username or Password\"");
 			}
@@ -69,7 +71,8 @@ public class loginPageTestCaseScript extends testBase{
 			password = ExcelUtils.getData(3, 2, 2);
 			loginPage.enterUserName(driver, Username);
 			loginPage.enterPassword(driver, password);
-			String message = loginPage.clickLogInBtn(driver);
+			loginPage.login(driver);
+			String message = loginPage.AlertWindow(driver);
 			try {
 				AssertJUnit.assertEquals("Please Provide Username and password", message);
 			} catch (AssertionError AE) {
@@ -87,7 +90,8 @@ public class loginPageTestCaseScript extends testBase{
 			password = ExcelUtils.getData(4, 2, 3);
 			loginPage.enterUserName(driver, Username);
 			loginPage.enterPassword(driver, password);
-			String message = loginPage.clickLogInBtn(driver);
+			loginPage.login(driver);
+			String message = loginPage.AlertWindow(driver);
 			try {
 				AssertJUnit.assertEquals("Please Provide Username and password", message);
 			} catch (AssertionError AE) {
@@ -105,7 +109,8 @@ public class loginPageTestCaseScript extends testBase{
 			password = ExcelUtils.getData(5, 2, 4);
 			loginPage.enterUserName(driver, Username);
 			loginPage.enterPassword(driver, password);
-			String message = loginPage.clickLogInBtn(driver);
+			loginPage.login(driver);
+			String message = loginPage.AlertWindow(driver);
 			try {
 				AssertJUnit.assertEquals("Incorrect Username or Password", message);
 			} catch (AssertionError AE) {
@@ -121,13 +126,14 @@ public class loginPageTestCaseScript extends testBase{
 			String password = null;
 			Username = ExcelUtils.getData(6, 1, 5);
 			password = ExcelUtils.getData(6, 2, 5);
-			loginPage.enterUserName(driver, Username);
-			loginPage.enterPassword(driver, password);
-			String message = loginPage.clickLogInBtn(driver);
+			loginPage.enterUserName(driver, "");
+			loginPage.enterPassword(driver, "");
+			loginPage.login(driver);
+			String message = loginPage.AlertWindow(driver);
 			try {
 				AssertJUnit.assertEquals("Please Provide Username and password", message);
 			} catch (AssertionError AE) {
-				Log.warn("Alert message is not correct :-  Expected is \"Please Provide Username and password\"");
+				Log.error("Alert message is not correct :-  Expected is \"Please Provide Username and password\"");
 			}
 			Log.endTestCase("Empty UserName and Empty Password");
 		}
@@ -137,16 +143,14 @@ public class loginPageTestCaseScript extends testBase{
 			Log.startTestCase("Click on Forgot Link");
 			loginPage.forgotlink(driver);
 			Log.info("Forgot Link Clicked");
-			//Assert.assertEquals("Please Provide Username and password", message);
-			// Storing parent window reference into a String Variable
-			//Parent_Window = driver.getWindowHandle();
 		}
 
 		@Test(description = "Provide digit Value as UserName but not Mobile Number then click Submit Button",priority=8)
 		public void provideUserDigitbutNotMobileNumber() {
 			Log.startTestCase("Provide digit Value as UserName but not Mobile Number then click Submit Button");
-			
-			for (String Child_Window : driver.getWindowHandles()){
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
+			for(String Child_Window : driver.getWindowHandles()){
 				driver.switchTo().window(Child_Window);
 				String Username = null;
 				String password = null;
@@ -154,7 +158,8 @@ public class loginPageTestCaseScript extends testBase{
 				//password = ExcelUtils.getData(8, 2, 8);
 				loginPage.ForgotUserName(driver, Username);
 				loginPage.forgotMobileNumber(driver, "");
-				String message = loginPage.forgotSubmit(driver);
+				loginPage.forgotSubmit(driver);
+				String message = loginPage.AlertWindow(driver);
 				try {
 					AssertJUnit.assertEquals("Please enter username and mobile number", message);
 				} catch (AssertionError AE) {
@@ -167,7 +172,8 @@ public class loginPageTestCaseScript extends testBase{
 		@Test(description = "Provide Email As UserName but not Mobile Number then click Submit Button",priority=9)
 		public void provideEmailInUserNamebutNotMobileNumber() {
 			Log.startTestCase("Provide Email As UserName but not Mobile Number then click Submit Button");
-			
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
 			for (String Child_Window : driver.getWindowHandles()){
 				String Username = null;
 				String password = null;
@@ -176,9 +182,10 @@ public class loginPageTestCaseScript extends testBase{
 				driver.switchTo().window(Child_Window);  
 				loginPage.ForgotUserName(driver, Username);
 				loginPage.forgotMobileNumber(driver, "");
-				String message = loginPage.forgotSubmit(driver);
+				loginPage.forgotSubmit(driver);
+				String message = loginPage.AlertWindow(driver);
 				try {
-					AssertJUnit.assertEquals("Please enter username and mobile number", message);
+					Assert.assertEquals("Please enter username and mobile number", message);
 				} catch (AssertionError AE) {
 					Log.warn("Alert message is not correct :-  Expected is \"Please enter username and mobile number\"");
 				}
@@ -189,7 +196,8 @@ public class loginPageTestCaseScript extends testBase{
 		@Test(description = "Provide Numeric As UserName but not Mobile Number then click Submit Button",priority=10)
 		public void provideNumericInUserNamebutNotMobileNumber() {
 			Log.startTestCase("Provide Numeric As UserName but not Mobile Number then click Submit Button");
-			
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
 			for (String Child_Window : driver.getWindowHandles()){
 				String Username = null;
 				String password = null;
@@ -198,7 +206,8 @@ public class loginPageTestCaseScript extends testBase{
 				driver.switchTo().window(Child_Window);  
 				loginPage.ForgotUserName(driver, Username);
 				loginPage.forgotMobileNumber(driver, "");
-				String message = loginPage.forgotSubmit(driver);
+				loginPage.forgotSubmit(driver);
+				String message = loginPage.AlertWindow(driver);
 				try {
 					AssertJUnit.assertEquals("Please enter username and mobile number", message);
 				} catch (AssertionError AE) {
@@ -211,7 +220,8 @@ public class loginPageTestCaseScript extends testBase{
 		@Test(description = "Provide Correct UserName but not Mobile Number then click Submit Button",priority=11)
 		public void provideCorrectUserNamebutNotMobileNumber() {
 			Log.startTestCase("Provide Correct UserName but not Mobile Number then click Submit Button");
-			
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
 			for (String Child_Window : driver.getWindowHandles()){
 				driver.switchTo().window(Child_Window);  
 				String Username = null;
@@ -221,7 +231,8 @@ public class loginPageTestCaseScript extends testBase{
 				driver.switchTo().window(Child_Window);  
 				loginPage.ForgotUserName(driver, Username);
 				loginPage.forgotMobileNumber(driver, "");
-				String message = loginPage.forgotSubmit(driver);
+				loginPage.forgotSubmit(driver);
+				String message = loginPage.AlertWindow(driver);
 				try {
 					AssertJUnit.assertEquals("Please enter username and mobile number", message);
 				} catch (AssertionError AE) {
@@ -233,45 +244,52 @@ public class loginPageTestCaseScript extends testBase{
 		
 
 		@Test(description = "Provide Correct UserName with Wrong Mobile Number then click Submit Button",priority=12)
-		public void provideCorrectUserNameAndWrongMobileNumnber() {
+		public void provideCorrectUserNameAndWrongMobileNumnber(){
 			Log.startTestCase("Provide Correct UserName with Wrong Mobile Number then click Submit Button");
-			
-			for (String Child_Window : driver.getWindowHandles()){
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
+			for(String Child_Window : driver.getWindowHandles()){
+				driver.switchTo().window(Child_Window);
 				String Username = null;
 				String password = null;
 				Username = ExcelUtils.getData(12, 1, 11);
 				password = ExcelUtils.getData(12, 2, 11);
-				driver.switchTo().window(Child_Window);  
+				driver.switchTo().window(Child_Window);
 				loginPage.ForgotUserName(driver, Username);
 				loginPage.forgotMobileNumber(driver, password);
-				String message = loginPage.forgotSubmit(driver);
-				try {
+				loginPage.forgotSubmit(driver);
+				String message = loginPage.AlertWindow(driver);
+				/*try {
 					AssertJUnit.assertEquals("Invalid username or mobile", message);
 				} catch (AssertionError AE) {
 					Log.warn("Alert message is not correct :-  Expected is \"Invalid username or mobile\"");
-				}
+				}*/
 				Log.endTestCase("Provide Correct UserName with Wrong Mobile Number then click Submit Button");
 			}
 		}
 		
+		
 		@Test(description = "Provide Empty UserName with Correct Mobile Number then click Submit Button",priority=13)
 		public void provideEmptyUserNameAndCorrectMobileNumber() {
 			Log.startTestCase("Provide Empty UserName with Correct Mobile Number then click Submit Button");
-			
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
 			for (String Child_Window : driver.getWindowHandles()){
 				driver.switchTo().window(Child_Window);
 				String Username = null;
 				String password = null;
 				//Username = ExcelUtils.getData(14, 1, 13);
 				password = ExcelUtils.getData(14, 2, 13);
+				driver.switchTo().window(Child_Window);
 				loginPage.ForgotUserName(driver, "");
 				loginPage.forgotMobileNumber(driver, password);
-				String message = loginPage.forgotSubmit(driver);
-				try {
+				loginPage.forgotSubmit(driver);
+				String message = loginPage.AlertWindow(driver);
+				/*try {
 					AssertJUnit.assertEquals("Please enter username and mobile number", message);
 				} catch (AssertionError AE) {
 					Log.warn("Alert message is not correct :-  Expected is \"Please enter username and mobile number\"");
-				}
+				}*/
 				Log.endTestCase("Provide Empty UserName with Correct Mobile Number then click Submit Button");
 			}
 		}
@@ -279,16 +297,19 @@ public class loginPageTestCaseScript extends testBase{
 		@Test(description = "Provide Wrong UserName with Wrong Mobile Number then click Submit Button",priority=14)
 		public void provideWrongUserNameAndWrongMobileNumber() {
 			Log.startTestCase("Provide Wrong UserName with Wrong Mobile Number then click Submit Button");
-			
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
 			for (String Child_Window : driver.getWindowHandles()){
 				driver.switchTo().window(Child_Window);
 				String Username = null;
 				String password = null;
 				Username = ExcelUtils.getData(15, 1, 14);
 				password = ExcelUtils.getData(15, 2, 14);
+				driver.switchTo().window(Child_Window);
 				loginPage.ForgotUserName(driver, Username);
 				loginPage.forgotMobileNumber(driver, password);
-				String message = loginPage.forgotSubmit(driver);
+				loginPage.forgotSubmit(driver);
+				String message = loginPage.AlertWindow(driver);
 				try {
 					AssertJUnit.assertEquals("Invalid username or mobile", message);
 				} catch (AssertionError AE) {
@@ -301,12 +322,15 @@ public class loginPageTestCaseScript extends testBase{
 		@Test(description = "Provide Empty UserName with Empty Mobile Number then click Submit Button",priority=15)
 		public void provideEmptyUserNameAndEmptyMobileNumber() {
 			Log.startTestCase("Provide Empty UserName with Empty Mobile Number then click Submit Button");
-			
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
 			for (String Child_Window : driver.getWindowHandles()){
 				driver.switchTo().window(Child_Window);  
 				loginPage.ForgotUserName(driver, "");
 				loginPage.forgotMobileNumber(driver, "");
-				String message = loginPage.forgotSubmit(driver);
+				driver.switchTo().window(Child_Window);
+				loginPage.forgotSubmit(driver);
+				String message = loginPage.AlertWindow(driver);
 				try {
 					AssertJUnit.assertEquals("Please enter username and mobile number", message);
 				} catch (AssertionError AE) {
@@ -319,7 +343,8 @@ public class loginPageTestCaseScript extends testBase{
 		@Test(description = "Clear Username And Password",priority=16)
 		public void clearUserNameAndPassword() {
 			Log.startTestCase("Clear Username And Password");
-			
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
 			for (String Child_Window : driver.getWindowHandles()){
 				driver.switchTo().window(Child_Window);
 				loginPage.ForgotUserName(driver, "1236546");
@@ -331,16 +356,18 @@ public class loginPageTestCaseScript extends testBase{
 		@Test(description = "close Forgot Window",priority=17)
 		public void CloseForgot() {
 			Log.startTestCase("close Forgot Window");
-			
+			loginPage.forgotlink(driver);
+			Log.info("Forgot Link Clicked");
 			for (String Child_Window : driver.getWindowHandles()){
 				driver.switchTo().window(Child_Window);  
 				loginPage.closeForgot(driver);
-				Log.endTestCase("close Forgot Window");
 			}
+			Log.endTestCase("close Forgot Window");
 		}
 		
 		@Test(description = "Valid UserName and Valid Password",priority=18)
 		public void validUserNameAndValidPass() {
+			driver.navigate().refresh();
 			Log.startTestCase("Valid UserName and Valid Password");
 			String UserName = null;
 			String Password = null;

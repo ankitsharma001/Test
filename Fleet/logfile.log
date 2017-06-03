@@ -1,0 +1,496 @@
+03 Jun 2017 14:56:01,364 INFO  [Log] Driver is opening URL 
+03 Jun 2017 14:56:09,730 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:09,731 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:09,731 INFO  [Log] Test case Name -->  Valid UserName and Invalid Password        
+03 Jun 2017 14:56:09,732 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:09,732 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:10,426 INFO  [Log] Entering Username :demo 
+03 Jun 2017 14:56:10,554 INFO  [Log] Entering Password: 123.0 
+03 Jun 2017 14:56:10,638 INFO  [Log] click login button 
+03 Jun 2017 14:56:15,534 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:15,538 INFO  [Log] Handle Alert Window and getting message : Incorrect Username or Password 
+03 Jun 2017 14:56:15,539 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:15,539 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:15,539 INFO  [Log] End Test Case --->  Valid UserName and Invalid Password            
+03 Jun 2017 14:56:15,539 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:15,539 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:15,539 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:15,544 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:15,544 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:15,544 INFO  [Log] Test case Name -->  Invalid UserName and valid Password        
+03 Jun 2017 14:56:15,544 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:15,544 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:15,683 INFO  [Log] Entering Username :123.0 
+03 Jun 2017 14:56:15,816 INFO  [Log] Entering Password: demo 
+03 Jun 2017 14:56:15,889 INFO  [Log] click login button 
+03 Jun 2017 14:56:17,309 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:17,313 INFO  [Log] Handle Alert Window and getting message : Incorrect Username or Password 
+03 Jun 2017 14:56:17,314 WARN  [Log] Alert message is not correct :-  Expected is "Incorrect Username or Password" 
+03 Jun 2017 14:56:17,314 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:17,314 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:17,314 INFO  [Log] End Test Case --->  Invalid UserName and valid Password            
+03 Jun 2017 14:56:17,314 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:17,314 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:17,314 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:17,318 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:17,318 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:17,318 INFO  [Log] Test case Name -->  Valid UserName and Empty Password        
+03 Jun 2017 14:56:17,318 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:17,318 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:17,483 INFO  [Log] Entering Username :demo 
+03 Jun 2017 14:56:17,631 INFO  [Log] Entering Password:  
+03 Jun 2017 14:56:17,683 INFO  [Log] click login button 
+03 Jun 2017 14:56:17,998 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:18,002 INFO  [Log] Handle Alert Window and getting message : Please Provide Username and password 
+03 Jun 2017 14:56:18,002 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:18,002 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:18,002 INFO  [Log] End Test Case --->  Valid UserName and Empty Password            
+03 Jun 2017 14:56:18,002 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:18,002 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:18,002 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:18,004 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:18,005 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:18,005 INFO  [Log] Test case Name -->  Empty UserName and valid Password        
+03 Jun 2017 14:56:18,005 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:18,005 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:18,116 INFO  [Log] Entering Username : 
+03 Jun 2017 14:56:18,176 INFO  [Log] Entering Password: demo 
+03 Jun 2017 14:56:18,224 INFO  [Log] click login button 
+03 Jun 2017 14:56:18,506 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:18,512 INFO  [Log] Handle Alert Window and getting message : Please Provide Username and password 
+03 Jun 2017 14:56:18,512 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:18,512 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:18,512 INFO  [Log] End Test Case --->  Empty UserName and valid Passwor            
+03 Jun 2017 14:56:18,512 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:18,512 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:18,512 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:18,515 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:18,516 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:18,516 INFO  [Log] Test case Name -->  Wrong UserName and Wrong Password        
+03 Jun 2017 14:56:18,516 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:18,516 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:18,624 INFO  [Log] Entering Username :demo123 
+03 Jun 2017 14:56:18,723 INFO  [Log] Entering Password: demo13 
+03 Jun 2017 14:56:18,779 INFO  [Log] click login button 
+03 Jun 2017 14:56:20,491 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:20,495 INFO  [Log] Handle Alert Window and getting message : Incorrect Username or Password 
+03 Jun 2017 14:56:20,496 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:20,496 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:20,496 INFO  [Log] End Test Case --->  Wrong UserName and Wrong Password            
+03 Jun 2017 14:56:20,496 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:20,496 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:20,496 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:20,498 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:20,499 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:20,499 INFO  [Log] Test case Name -->  Empty UserName and Empty Password        
+03 Jun 2017 14:56:20,499 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:20,499 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:20,720 INFO  [Log] Entering Username : 
+03 Jun 2017 14:56:20,917 INFO  [Log] Entering Password:  
+03 Jun 2017 14:56:21,005 INFO  [Log] click login button 
+03 Jun 2017 14:56:21,347 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:21,350 INFO  [Log] Handle Alert Window and getting message : Please Provide Username and password 
+03 Jun 2017 14:56:21,350 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:21,350 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:21,350 INFO  [Log] End Test Case --->  Empty UserName and Empty Password            
+03 Jun 2017 14:56:21,350 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:21,350 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:21,351 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:21,353 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:21,353 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:21,353 INFO  [Log] Test case Name -->  Click on Forgot Link        
+03 Jun 2017 14:56:21,353 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:21,353 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:22,298 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:22,490 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:22,505 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:22,505 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:22,505 INFO  [Log] Test case Name -->  Provide digit Value as UserName but not Mobile Number then click Submit Button        
+03 Jun 2017 14:56:22,505 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:22,505 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:23,535 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:23,680 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:24,453 INFO  [Log] Entering Username in forgot link Window : 13123.0 
+03 Jun 2017 14:56:24,744 INFO  [Log] Entering Mobile Number in forgot link Window :  
+03 Jun 2017 14:56:24,911 INFO  [Log] Click on forgot submit button 
+03 Jun 2017 14:56:25,183 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:25,187 INFO  [Log] Handle Alert Window and getting message : Please enter username and mobile number 
+03 Jun 2017 14:56:25,187 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:25,187 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:25,187 INFO  [Log] End Test Case --->  Provide digit Value as UserName but not Mobile Number then click Submit Button            
+03 Jun 2017 14:56:25,188 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:25,188 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:25,188 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:25,190 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:25,190 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:25,190 INFO  [Log] Test case Name -->  Provide Email As UserName but not Mobile Number then click Submit Button        
+03 Jun 2017 14:56:25,191 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:25,191 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:26,084 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:26,270 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:26,939 INFO  [Log] Entering Username in forgot link Window : sunity@gmail.com 
+03 Jun 2017 14:56:27,251 INFO  [Log] Entering Mobile Number in forgot link Window :  
+03 Jun 2017 14:56:27,382 INFO  [Log] Click on forgot submit button 
+03 Jun 2017 14:56:27,656 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:27,660 INFO  [Log] Handle Alert Window and getting message : Please enter username and mobile number 
+03 Jun 2017 14:56:27,661 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:27,661 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:27,661 INFO  [Log] End Test Case --->  Provide Email As UserName but not Mobile Number then click Submit Button            
+03 Jun 2017 14:56:27,661 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:27,661 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:27,661 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:27,663 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:27,663 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:27,663 INFO  [Log] Test case Name -->  Provide Numeric As UserName but not Mobile Number then click Submit Button        
+03 Jun 2017 14:56:27,663 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:27,663 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:28,661 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:28,854 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:29,512 INFO  [Log] Entering Username in forgot link Window : Meena123 
+03 Jun 2017 14:56:29,789 INFO  [Log] Entering Mobile Number in forgot link Window :  
+03 Jun 2017 14:56:29,922 INFO  [Log] Click on forgot submit button 
+03 Jun 2017 14:56:30,174 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:30,178 INFO  [Log] Handle Alert Window and getting message : Please enter username and mobile number 
+03 Jun 2017 14:56:30,178 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:30,178 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:30,178 INFO  [Log] End Test Case --->  Provide Numeric As UserName but not Mobile Number then click Submit Button            
+03 Jun 2017 14:56:30,178 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:30,178 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:30,178 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:30,182 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:30,182 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:30,182 INFO  [Log] Test case Name -->  Provide Correct UserName but not Mobile Number then click Submit Button        
+03 Jun 2017 14:56:30,182 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:30,182 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:31,260 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:31,399 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:32,081 INFO  [Log] Entering Username in forgot link Window : demo 
+03 Jun 2017 14:56:32,317 INFO  [Log] Entering Mobile Number in forgot link Window :  
+03 Jun 2017 14:56:32,441 INFO  [Log] Click on forgot submit button 
+03 Jun 2017 14:56:32,682 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:32,686 INFO  [Log] Handle Alert Window and getting message : Please enter username and mobile number 
+03 Jun 2017 14:56:32,686 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:32,686 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:32,686 INFO  [Log] End Test Case --->  Provide Correct UserName but not Mobile Number then click Submit Button            
+03 Jun 2017 14:56:32,686 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:32,686 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:32,686 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:32,691 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:32,691 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:32,691 INFO  [Log] Test case Name -->  Provide Correct UserName with Wrong Mobile Number then click Submit Button        
+03 Jun 2017 14:56:32,691 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:32,691 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:33,878 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:34,030 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:34,759 INFO  [Log] Entering Username in forgot link Window : demo 
+03 Jun 2017 14:56:35,064 INFO  [Log] Entering Mobile Number in forgot link Window : 7.894651235E9 
+03 Jun 2017 14:56:35,198 INFO  [Log] Click on forgot submit button 
+03 Jun 2017 14:56:35,992 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:35,998 INFO  [Log] Handle Alert Window and getting message : Invalid username or mobile 
+03 Jun 2017 14:56:35,998 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:35,998 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:35,998 INFO  [Log] End Test Case --->  Provide Correct UserName with Wrong Mobile Number then click Submit Button            
+03 Jun 2017 14:56:35,998 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:35,998 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:35,998 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:36,000 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:36,001 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:36,001 INFO  [Log] Test case Name -->  Provide Empty UserName with Correct Mobile Number then click Submit Button        
+03 Jun 2017 14:56:36,001 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:36,001 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:37,338 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:37,470 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:38,161 INFO  [Log] Entering Username in forgot link Window :  
+03 Jun 2017 14:56:38,424 INFO  [Log] Entering Mobile Number in forgot link Window : 7.676670809E9 
+03 Jun 2017 14:56:38,572 INFO  [Log] Click on forgot submit button 
+03 Jun 2017 14:56:38,845 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:38,850 INFO  [Log] Handle Alert Window and getting message : Please enter username and mobile number 
+03 Jun 2017 14:56:38,850 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:38,850 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:38,850 INFO  [Log] End Test Case --->  Provide Empty UserName with Correct Mobile Number then click Submit Button            
+03 Jun 2017 14:56:38,850 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:38,850 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:38,850 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:38,856 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:38,856 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:38,856 INFO  [Log] Test case Name -->  Provide Wrong UserName with Wrong Mobile Number then click Submit Button        
+03 Jun 2017 14:56:38,856 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:38,856 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:40,117 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:40,268 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:40,978 INFO  [Log] Entering Username in forgot link Window : demo123421 
+03 Jun 2017 14:56:41,295 INFO  [Log] Entering Mobile Number in forgot link Window : 767667.0 
+03 Jun 2017 14:56:41,412 INFO  [Log] Click on forgot submit button 
+03 Jun 2017 14:56:42,681 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:42,688 INFO  [Log] Handle Alert Window and getting message : Invalid username or mobile 
+03 Jun 2017 14:56:42,688 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:42,689 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:42,689 INFO  [Log] End Test Case --->  Provide Wrong UserName with Wrong Mobile Number then click Submit Button            
+03 Jun 2017 14:56:42,689 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:42,689 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:42,689 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:42,693 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:42,693 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:42,693 INFO  [Log] Test case Name -->  Provide Empty UserName with Empty Mobile Number then click Submit Button        
+03 Jun 2017 14:56:42,693 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:42,693 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:43,690 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:43,846 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:44,490 INFO  [Log] Entering Username in forgot link Window :  
+03 Jun 2017 14:56:44,710 INFO  [Log] Entering Mobile Number in forgot link Window :  
+03 Jun 2017 14:56:44,837 INFO  [Log] Click on forgot submit button 
+03 Jun 2017 14:56:45,098 INFO  [Log] button ok clicked 
+03 Jun 2017 14:56:45,101 INFO  [Log] Handle Alert Window and getting message : Please enter username and mobile number 
+03 Jun 2017 14:56:45,101 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:45,101 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:45,101 INFO  [Log] End Test Case --->  Provide Empty UserName with Empty Mobile Number then click Submit Button            
+03 Jun 2017 14:56:45,101 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:45,101 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:45,101 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:45,103 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:45,103 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:45,103 INFO  [Log] Test case Name -->  Clear Username And Password        
+03 Jun 2017 14:56:45,103 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:45,103 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:46,012 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:46,130 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:46,756 INFO  [Log] Entering Username in forgot link Window : 1236546 
+03 Jun 2017 14:56:46,981 INFO  [Log] Forgot filed cleard  
+03 Jun 2017 14:56:46,981 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:46,981 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:46,981 INFO  [Log] End Test Case --->  Clear Username And Password            
+03 Jun 2017 14:56:46,981 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:46,981 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:46,981 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:46,983 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:46,983 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:46,984 INFO  [Log] Test case Name -->  close Forgot Window        
+03 Jun 2017 14:56:46,984 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:46,984 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:47,856 INFO  [Log] Click on forgot link 
+03 Jun 2017 14:56:48,006 INFO  [Log] Forgot Link Clicked 
+03 Jun 2017 14:56:48,014 INFO  [Log] Forgot close clicked  
+03 Jun 2017 14:56:48,721 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:48,721 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:48,721 INFO  [Log] End Test Case --->  close Forgot Window            
+03 Jun 2017 14:56:48,721 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:48,721 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:48,721 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:49,678 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:49,678 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:49,678 INFO  [Log] Test case Name -->  Valid UserName and Valid Password        
+03 Jun 2017 14:56:49,678 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:49,678 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:49,803 INFO  [Log] Entering Username :demo 
+03 Jun 2017 14:56:49,953 INFO  [Log] Entering Password: demo123 
+03 Jun 2017 14:56:50,037 INFO  [Log] click login button 
+03 Jun 2017 14:56:55,161 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:55,161 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:55,161 INFO  [Log] End Test Case --->  Valid UserName and Valid Password            
+03 Jun 2017 14:56:55,161 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:55,161 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:55,161 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:55,163 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:55,163 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:55,163 INFO  [Log] Test case Name -->  logout        
+03 Jun 2017 14:56:55,163 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:55,163 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:56,693 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:56,693 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:56,693 INFO  [Log] End Test Case --->  Logout Successfully..            
+03 Jun 2017 14:56:56,693 INFO  [Log] **************************************************************************************** 
+03 Jun 2017 14:56:56,693 INFO  [Log]                                                                                          
+03 Jun 2017 14:56:56,694 INFO  [Log] ________________________________________________________________________________________ 
+03 Jun 2017 14:56:56,810 INFO  [Log] Entering Username :demo 
+03 Jun 2017 14:56:56,927 INFO  [Log] Entering Password: demo123 
+03 Jun 2017 14:56:57,008 INFO  [Log] click login button 
+03 Jun 2017 14:56:59,543 INFO  [Log] Clicked on Home 
+03 Jun 2017 14:56:59,595 INFO  [Log] Fetching Home Drop Down Menu List Item Details.. 
+03 Jun 2017 14:56:59,851 INFO  [Log] Clicked on Home 
+03 Jun 2017 14:56:59,986 INFO  [Log] DashBoard 
+03 Jun 2017 14:57:00,053 INFO  [Log] Clicked on Home 
+03 Jun 2017 14:57:00,187 INFO  [Log] Trace Fleet 
+03 Jun 2017 14:57:00,291 INFO  [Log] Clicked on Home 
+03 Jun 2017 14:57:00,457 INFO  [Log] Trip Details 
+03 Jun 2017 14:57:00,536 INFO  [Log] Clicked on Home 
+03 Jun 2017 14:57:00,686 INFO  [Log] Notifications 
+03 Jun 2017 14:57:00,744 INFO  [Log] Clicked on Home 
+03 Jun 2017 14:57:00,873 INFO  [Log] Feedback / Complain / Request 
+03 Jun 2017 14:57:00,875 INFO  [Log] Drop Down List Contains expected Element 
+03 Jun 2017 14:57:00,875 INFO  [Log] DashBoard 
+03 Jun 2017 14:57:00,875 INFO  [Log] Trace Fleet 
+03 Jun 2017 14:57:00,875 INFO  [Log] Trip Details 
+03 Jun 2017 14:57:00,875 INFO  [Log] Notifications 
+03 Jun 2017 14:57:02,522 INFO  [Log] Dashboard is clicked 
+03 Jun 2017 14:57:03,230 INFO  [Log] Total Employee : 15 
+03 Jun 2017 14:57:03,368 INFO  [Log] Female Employee : 3 
+03 Jun 2017 14:57:03,610 INFO  [Log] Summery Report available Status : true 
+03 Jun 2017 14:57:03,712 INFO  [Log] Schedule Summery Report available Status : true 
+03 Jun 2017 14:57:03,782 INFO  [Log] Over mouse on Home Tab .. 
+03 Jun 2017 14:57:08,688 INFO  [Log] Fleet Trace Clicked.. 
+03 Jun 2017 14:57:08,780 INFO  [Log] Trip Started Text is available .. 
+03 Jun 2017 14:57:08,841 INFO  [Log]  
+03 Jun 2017 14:57:08,871 INFO  [Log]  
+03 Jun 2017 14:57:08,891 INFO  [Log]  
+03 Jun 2017 14:57:08,910 INFO  [Log]  
+03 Jun 2017 14:57:08,930 INFO  [Log]  
+03 Jun 2017 14:57:08,970 INFO  [Log] No Trip Information Available 
+03 Jun 2017 14:57:11,731 INFO  [Log] Fleet Management - Notifications 
+03 Jun 2017 14:57:12,120 INFO  [Log] No Notification on Todays Notification 
+03 Jun 2017 14:57:12,382 INFO  [Log] All Notification Radio button is selected .. 
+03 Jun 2017 14:57:12,382 INFO  [Log] Data is availabl in All Notification 
+03 Jun 2017 14:57:17,803 INFO  [Log] Fleet Management - Add 
+03 Jun 2017 14:57:26,001 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:57:26,205 INFO  [Log] Handle Alert Message : Route Name cannot be empty 
+03 Jun 2017 14:57:26,412 INFO  [Log] Route name is enterd :-Route123 
+03 Jun 2017 14:57:34,493 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:57:34,640 INFO  [Log] Handle Alert Message : Source cannot be empty 
+03 Jun 2017 14:57:34,751 INFO  [Log] Route name is enterd :-ABCDEFG 
+03 Jun 2017 14:57:42,836 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:57:42,988 INFO  [Log] Handle Alert Message : Source cannot be empty 
+03 Jun 2017 14:57:43,124 INFO  [Log] Route name is enterd :-123456789 
+03 Jun 2017 14:57:51,218 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:57:51,370 INFO  [Log] Handle Alert Message : Source cannot be empty 
+03 Jun 2017 14:57:51,504 INFO  [Log] Route name is enterd :-@#$%^& 
+03 Jun 2017 14:57:59,628 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:57:59,792 INFO  [Log] Handle Alert Message : Source cannot be empty 
+03 Jun 2017 14:57:59,925 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:58:00,138 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:58:00,263 INFO  [Log] Dropdownlist Value selected = DemoCompany 
+03 Jun 2017 14:58:00,264 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:58:08,379 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:58:08,658 INFO  [Log] button ok clicked 
+03 Jun 2017 14:58:08,663 INFO  [Log] Handle Alert Window and getting message : Destination cannot be empty 
+03 Jun 2017 14:58:11,013 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:58:11,200 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:58:11,386 INFO  [Log] Dropdownlist Value selected = Marthahalli 
+03 Jun 2017 14:58:11,671 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:58:19,841 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:58:20,010 INFO  [Log] Handle Alert Message : Source cannot be empty 
+03 Jun 2017 14:58:20,133 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:58:20,350 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:58:20,484 INFO  [Log] From Dropdownlist Value selected = SJR Verity 
+03 Jun 2017 14:58:20,484 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:58:21,150 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:58:21,334 INFO  [Log] To Dropdownlist Value selected = Jigani 
+03 Jun 2017 14:58:21,334 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:58:29,540 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:58:29,793 INFO  [Log] button ok clicked 
+03 Jun 2017 14:58:29,799 INFO  [Log] Handle Alert Window and getting message : Either Source or Destination should be company stop 
+03 Jun 2017 14:58:29,986 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:58:30,209 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:58:30,305 INFO  [Log] From Dropdownlist Value selected = DemoCompany 
+03 Jun 2017 14:58:30,305 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:58:30,513 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:58:30,722 INFO  [Log] To Dropdownlist Value selected = Jigani 
+03 Jun 2017 14:58:30,722 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:58:38,833 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:58:38,983 INFO  [Log] Handle Alert Message : Atleast add one stop... 
+03 Jun 2017 14:58:39,087 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:58:39,236 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:58:39,318 INFO  [Log] From Dropdownlist Value selected = DemoCompany 
+03 Jun 2017 14:58:39,318 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:58:39,950 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:58:40,124 INFO  [Log] To Dropdownlist Value selected = Jigani 
+03 Jun 2017 14:58:40,124 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:58:40,306 INFO  [Log] Stoppage Addedd .. 
+03 Jun 2017 14:58:48,390 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:58:48,653 INFO  [Log] button ok clicked 
+03 Jun 2017 14:58:48,657 INFO  [Log] Handle Alert Window and getting message : Added stops cannot be empty/ remove empty stops 
+03 Jun 2017 14:58:50,825 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:58:51,038 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:58:51,125 INFO  [Log] From Dropdownlist Value selected = DemoCompany 
+03 Jun 2017 14:58:51,125 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:58:51,326 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:58:51,514 INFO  [Log] To Dropdownlist Value selected = Jigani 
+03 Jun 2017 14:58:51,514 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:58:51,643 INFO  [Log] Stoppage Addedd .. 
+03 Jun 2017 14:58:51,904 INFO  [Log] Stoppage List Size :-11 
+03 Jun 2017 14:58:52,029 INFO  [Log] Stoppage Value selected = DemoCompany 
+03 Jun 2017 14:58:52,029 INFO  [Log] Stoppage String Slected .. 
+03 Jun 2017 14:59:00,218 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:59:00,358 INFO  [Log] Handle Alert Message : Source stop is added again in stops... 
+03 Jun 2017 14:59:02,645 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:59:02,886 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:59:03,185 INFO  [Log] From Dropdownlist Value selected = Jigani 
+03 Jun 2017 14:59:03,185 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:59:03,406 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:59:03,490 INFO  [Log] To Dropdownlist Value selected = DemoCompany 
+03 Jun 2017 14:59:03,490 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:59:03,649 INFO  [Log] Stoppage Addedd .. 
+03 Jun 2017 14:59:03,906 INFO  [Log] Stoppage List Size :-11 
+03 Jun 2017 14:59:04,014 INFO  [Log] Stoppage Value selected = DemoCompany 
+03 Jun 2017 14:59:04,014 INFO  [Log] Stoppage String Slected .. 
+03 Jun 2017 14:59:12,178 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:59:12,337 INFO  [Log] Handle Alert Message : Destination stop is added again in stops... 
+03 Jun 2017 14:59:15,111 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:59:15,352 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:59:15,442 INFO  [Log] From Dropdownlist Value selected = DemoCompany 
+03 Jun 2017 14:59:15,443 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:59:15,651 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:59:15,862 INFO  [Log] To Dropdownlist Value selected = Jigani 
+03 Jun 2017 14:59:15,862 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:59:16,011 INFO  [Log] Stoppage Addedd .. 
+03 Jun 2017 14:59:16,237 INFO  [Log] Stoppage List Size :-11 
+03 Jun 2017 14:59:16,386 INFO  [Log] Stoppage Value selected = Marthahalli 
+03 Jun 2017 14:59:16,386 INFO  [Log] Stoppage String Slected .. 
+03 Jun 2017 14:59:24,532 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:59:25,296 INFO  [Log] Button Save Clicked Succesffully 
+03 Jun 2017 14:59:27,807 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:59:28,043 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:59:28,154 INFO  [Log] From Dropdownlist Value selected = DemoCompany 
+03 Jun 2017 14:59:28,155 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:59:28,394 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:59:28,624 INFO  [Log] To Dropdownlist Value selected = Jigani 
+03 Jun 2017 14:59:28,625 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:59:28,777 INFO  [Log] Stoppage Addedd .. 
+03 Jun 2017 14:59:28,962 INFO  [Log] Stoppage List Size :-11 
+03 Jun 2017 14:59:29,144 INFO  [Log] Stoppage Value selected = Marthahalli 
+03 Jun 2017 14:59:29,144 INFO  [Log] Stoppage String Slected .. 
+03 Jun 2017 14:59:29,337 INFO  [Log] Delete Stoppage Clicked 
+03 Jun 2017 14:59:29,579 INFO  [Log] Yes, delete it! clicked 
+03 Jun 2017 14:59:29,582 INFO  [Log] Handle Alert Window and getting message : Sure you want to delete this stop? 
+03 Jun 2017 14:59:31,899 INFO  [Log] Route name is enterd :-Route1 
+03 Jun 2017 14:59:35,195 INFO  [Log] From List Size :-11 
+03 Jun 2017 14:59:35,295 INFO  [Log] From Dropdownlist Value selected = DemoCompany 
+03 Jun 2017 14:59:35,296 INFO  [Log] From String Slected .. 
+03 Jun 2017 14:59:35,480 INFO  [Log] To List Size :-11 
+03 Jun 2017 14:59:35,594 INFO  [Log] To Dropdownlist Value selected = Manayata Tech Park 
+03 Jun 2017 14:59:35,594 INFO  [Log] To String Slected .. 
+03 Jun 2017 14:59:35,741 INFO  [Log] Stoppage Addedd .. 
+03 Jun 2017 14:59:35,898 INFO  [Log] Stoppage List Size :-11 
+03 Jun 2017 14:59:36,043 INFO  [Log] Stoppage Value selected = SJR Verity 
+03 Jun 2017 14:59:36,043 INFO  [Log] Stoppage String Slected .. 
+03 Jun 2017 14:59:44,193 INFO  [Log] Preview button Clicked. 
+03 Jun 2017 14:59:44,620 INFO  [Log] Button Save Clicked Succesffully 
+03 Jun 2017 14:59:50,582 INFO  [Log] button ok clicked 
+03 Jun 2017 14:59:50,585 INFO  [Log] Handle Alert Window and getting message : Route added successfully... 
+03 Jun 2017 14:59:50,754 INFO  [Log] Route Name Clicked 
+03 Jun 2017 14:59:50,953 INFO  [Log] Add Route 
+03 Jun 2017 14:59:50,981 INFO  [Log] Show Routes 
+03 Jun 2017 14:59:51,007 INFO  [Log]  
+03 Jun 2017 14:59:51,037 INFO  [Log] Create Schedule 
+03 Jun 2017 14:59:52,742 INFO  [Log] Create Schedule Clicked.. 
+03 Jun 2017 14:59:59,128 INFO  [Log] R12 is selected... 
+03 Jun 2017 14:59:59,351 INFO  [Log] Create Button clicked 
+03 Jun 2017 14:59:59,578 INFO  [Log] button ok clicked 
+03 Jun 2017 14:59:59,581 INFO  [Log] Handle Alert Window and getting message : Vehicle must be selected... 
+03 Jun 2017 15:00:00,618 INFO  [Log] Route Name Clicked 
+03 Jun 2017 15:00:01,394 INFO  [Log] DemoV2 selected.. 
+03 Jun 2017 15:00:01,506 INFO  [Log] Create Button clicked 
+03 Jun 2017 15:00:01,745 INFO  [Log] button ok clicked 
+03 Jun 2017 15:00:01,748 INFO  [Log] Handle Alert Window and getting message : Route must be selected... 
+03 Jun 2017 15:00:07,911 INFO  [Log] R12 is selected... 
+03 Jun 2017 15:00:08,213 INFO  [Log] Create Button clicked 
+03 Jun 2017 15:00:08,463 INFO  [Log] button ok clicked 
+03 Jun 2017 15:00:08,466 INFO  [Log] Handle Alert Window and getting message : Vehicle must be selected... 
+03 Jun 2017 15:00:10,672 INFO  [Log] DemoV2 selected.. 
+03 Jun 2017 15:00:16,479 INFO  [Log] R12 is selected... 
+03 Jun 2017 15:00:16,817 INFO  [Log] Create Button clicked 
+03 Jun 2017 15:00:17,029 INFO  [Log] button ok clicked 
+03 Jun 2017 15:00:17,033 INFO  [Log] Handle Alert Window and getting message : Please enter the time for all the stops 
+03 Jun 2017 15:00:19,613 INFO  [Log] DemoV2 selected.. 
+03 Jun 2017 15:00:23,876 INFO  [Log] R12 is selected... 
+03 Jun 2017 15:00:24,334 INFO  [Log] Create Button clicked 
+03 Jun 2017 15:00:26,003 INFO  [Log] button ok clicked 
+03 Jun 2017 15:00:26,006 INFO  [Log] Handle Alert Window and getting message : Schedule created successfully... 

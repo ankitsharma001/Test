@@ -29,16 +29,17 @@ public class homePageTestCases extends testBase {
 		HomePage hpobject = new HomePage();
 		hpobject.clickHome(driver);
 		String[] HomeDropDown = hpobject.getHomeDropDownDetails(driver);
-		Assert.assertEquals(4, HomeDropDown.length);
+		Assert.assertEquals(5, HomeDropDown.length);
 		Assert.assertEquals("DashBoard", HomeDropDown[0]);
 		Assert.assertEquals("Trace Fleet", HomeDropDown[1]);
 		Assert.assertEquals("Trip Details", HomeDropDown[2]);
 		Assert.assertEquals("Notifications", HomeDropDown[3]);
+		Assert.assertEquals("Feedback / Complain / Request", HomeDropDown[4]);
 		Log.info("Drop Down List Contains expected Element");
 		Log.info(HomeDropDown[0]);
 		Log.info(HomeDropDown[1]);
 		Log.info(HomeDropDown[2]);
-		org.shiksha.fleet.utility.Log.info(HomeDropDown[3]);
+		Log.info(HomeDropDown[3]);
 	}
 
 	@Test(priority = 21, description = "Click on DashBoard")

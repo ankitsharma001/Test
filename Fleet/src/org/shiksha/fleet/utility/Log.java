@@ -24,7 +24,7 @@ public class Log {
 	 public static void endTestCase(String sTestCaseName){
 		Log.info("                                                                                        ");
 		Log.info("****************************************************************************************");
-		Log.info("End Test Case --->             "+sTestCaseName+"           ");
+		Log.info("End Test Case --->  "+sTestCaseName+"           ");
 		Log.info("****************************************************************************************");
 		Log.info("                                                                                        ");
 		Log.info("________________________________________________________________________________________");

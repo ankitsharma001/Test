@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 public class HomePage{
 
-	private static final By home = By
+	public static final By home = By
 			.xpath(".//*[@class='dropdown-toggle' and contains(text(),'Home')]");
 	private static final By homeDropDown = By
 			.xpath(".//*[@href='#' and contains(text(),'Home')]/following-sibling::ul[1]/li/a");
@@ -27,18 +27,20 @@ public class HomePage{
 	public static void clickHome(WebDriver driver) {
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(home));
-		Log.info("Over mouse on Home Tab ..");
 		driver.findElement(home).click();
+		Log.info("Clicked on Home");
 	}
 
 	public static String[] getHomeDropDownDetails(WebDriver driver) {
 
-		String[] dropContainer = new String[4];
+		String[] dropContainer = new String[5];
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(home));
 		Log.info("Fetching Home Drop Down Menu List Item Details..");
 		driver.findElement(home).click();
+		
 		List<WebElement> lists = driver.findElements(homeDropDown);
+		
 		int size = 0;
 		for (int i = 1; i <= lists.size(); i++) {
 			HomePage.clickHome(driver);
@@ -49,7 +51,8 @@ public class HomePage{
 					.findElement(By
 							.xpath(".//*[@href='#' and contains(text(),'Home')]/following-sibling::ul/li["
 									+ i + "]/a"));
-			dropContainer[size++]=linkElement.getText();
+			Log.info(dropContainer[size++]=linkElement.getText());
+			
 		}
 		return dropContainer;
 	}
@@ -83,8 +86,8 @@ public class HomePage{
 	public static String VerifyBusReportReport(WebDriver driver){
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(totalBus));
-		WebElement totalEmp = driver.findElement(totalBus);
-		String busCount = totalEmp.getText();
+		WebElement totalbus = driver.findElement(totalBus);
+		String busCount = totalbus.getText();
 		return busCount;
 	}
 	

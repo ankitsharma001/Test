@@ -6,17 +6,18 @@
       <class name="org.shiksha.fleet.feature.homePageTestCases">
         <methods>
           <include name="verifyBusReport"/>
-          <include name="clickDashboard"/>
           <include name="beforeClass"/>
-          <include name="verifySizeHomeDropDownMenu"/>
           <include name="beforeSuite"/>
-          <include name="verifyFemaleTotalEmpReport"/>
-          <include name="verifyScheduleSummeryReport"/>
           <include name="afterMethod"/>
-          <include name="verifyTotalEmpReport"/>
-          <include name="verifyShiftSummeryReport"/>
         </methods>
       </class> <!-- org.shiksha.fleet.feature.homePageTestCases -->
+      <class name="org.shiksha.fleet.feature.showRouteTestCases">
+        <methods>
+          <include name="verifyAddShowRoute"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- org.shiksha.fleet.feature.showRouteTestCases -->
     </classes>
   </test> <!-- Fleet Management(failed) -->
 </suite> <!-- Failed suite [Fleet Management Suite] -->

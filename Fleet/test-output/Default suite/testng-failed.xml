@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="org.shiksha.fleet.feature.tripDetailsTestCases">
+      <class name="org.shiksha.fleet.feature.createScheduleTestCase">
         <methods>
+          <include name="clickOnCreateSchedulePage"/>
+          <include name="beforeClass"/>
           <include name="beforeSuite"/>
           <include name="afterMethod"/>
-          <include name="beforeClass"/>
-          <include name="tripDetails"/>
         </methods>
-      </class> <!-- org.shiksha.fleet.feature.tripDetailsTestCases -->
+      </class> <!-- org.shiksha.fleet.feature.createScheduleTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
